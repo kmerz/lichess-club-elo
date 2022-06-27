@@ -48,6 +48,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 name = "club-elo"
 version = "0.1.0"
 dependencies = [
+ "elo",
  "reqwest",
  "serde",
  "serde_derive",
@@ -70,6 +71,12 @@ name = "core-foundation-sys"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5827cebf4670468b8772dd191856768aedcb1b0278a04f989f7766351917b9dc"
+
+[[package]]
+name = "elo"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a209ff26836131c1a93ebc07b3649d39ac98acd027bc97136e4878b8f0945041"
 
 [[package]]
 name = "encoding_rs"

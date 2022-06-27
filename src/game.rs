@@ -12,26 +12,26 @@ pub struct Game {
     perf: String,
     created_at: i64,
     last_move_at: i64,
-    status: String,
-    winner: Option<String>,
-    players: Players,
+    pub status: String,
+    pub winner: Option<String>,
+    pub players: Players,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct Players {
-    white: Color,
-    black: Color,
+    pub white: Color,
+    pub black: Color,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct Color {
-    user: User,
+    pub user: User,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct User {
-    name: String,
-    id: String,
+    pub name: String,
+    pub id: String,
 }
 
 impl Game {
